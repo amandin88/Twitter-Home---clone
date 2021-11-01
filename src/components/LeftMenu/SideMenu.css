@@ -1,0 +1,107 @@
+:root {
+  --side-menu-width: calc(100% - 20px);
+  --side-menu-height: calc(100% - 10px);
+}
+
+.side-menu {
+  width: var(--side-menu-width);
+  height: var(--side-menu-height);
+  padding: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-menu-container {
+  width: calc(100% - 3px);
+  padding: 3px 0;
+}
+
+.side-menu-option {
+  width: fit-content;
+  height: 44px;
+  padding: 4px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 45px;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.side-menu-option > img {
+  width: 32px;
+  height: 32px;
+}
+
+.side-menu-option > h1 {
+  margin: 0 24px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.side-menu-option > h1.selected {
+  font-weight: bold;
+}
+
+.side-menu-tweet-btn {
+  width: 90%;
+  height: 54px;
+  margin: 20px 0;
+  border-radius: 45px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #1d9bf0;
+}
+
+.side-menu-user-options {
+  width: calc(100% - 8px);
+  height: 68px;
+  padding: 0 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 45px;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.side-menu-user-options img {
+  height: 32px;
+}
+
+.side-menu-user-options img.profile {
+  height: 40px;
+}
+
+.side-menu-user-options > div {
+  padding-right: 10px;
+}
+
+.side-menu-user-options h2 {
+  padding: 2px 0;
+  font-size: 14px;
+}
+
+.side-menu-user-options h3 {
+  padding: 2px 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #45484b;
+}
+
+.side-menu-option:hover,
+.side-menu-user-options:hover {
+  background-color: #e7e7e8;
+}
+
+.side-menu-option.logo:hover {
+  background-color: #e8f5fd;
+}
+
+.side-menu-tweet-btn:hover {
+  background-color: #1a8cd8;
+}
