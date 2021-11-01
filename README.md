@@ -5,4 +5,4 @@ Home Page of Twitter cloned using ReactJS and pure CSS:
   - Is not responsive yet
   - Float menus are not implemented yet
 
-I may update and finish it when I have time.
+I may update to optimize the code and finish it when I have time.
